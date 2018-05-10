@@ -20,7 +20,7 @@ We also tried to apply a similar structure of Conv-1D + HEALPix on DCGAN, but th
     
 The generated spherical MNIST digits were not realistic comparing to the counterparts from the ordinary rectangle images. One of the obvious barriers is that the 12 base pixels are not hierarchically distributed as the rest children pixels. The other reason might due to the inability to move filter pixel by pixel, which forced the downgrade happened in each HEALPix CNN layer. 
 
-# Something to install
+# Requirements
 - `numpy`, `healpy`, `matplotlib`
 - PyTorch version: 
     - `torch`
