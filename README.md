@@ -12,7 +12,8 @@ For further information about HEALPix, please find [here](http://healpix.sourcef
     
 We built a simple two layers of 1-D CNN with a layer of a fully-connected network to classify MNIST hand-written digit images (images with $0\sim9$ digits) on spherical images. The MNIST dataset was projected onto HEALPix with $Nside$ equal to 8, and we set each layer of CNN to downgrade a level of hierarchical pixelization. The validation accuracy approached 97.5% within 100 epochs.
 ![](images/MNIST-keras.png)
-![](images/MNIST-pred.png)
+<img src="images/MNIST-pred.png" width="640">
+
 
 # (Ongoing) DCGAN + HEALPix + Conv1D = image generation on spheres
 We also tried to apply a similar structure of Conv-1D + HEALPix on DCGAN, but the results were awkward. We projected the MNIST onto HEALPix grid with $Nside=16$. The discriminator was designed similarly as MNIST classification task but using three CNN layers, and the generator was built from four deconvolution layers with the first layer broadcasting the input latent space noise to 12 base pixels in HEALPix. 
