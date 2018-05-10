@@ -2,7 +2,7 @@
 An experimental implement of Conv-1D on HEALPix array. This idea popped up while I was researching in cosmology using HEALPix. Guess it could be a toy model for some astronomers love to play with HEALPix.
 
 # Warning
-This repository served as a PyTorch and a Keras version of HEALPix CNN. We should keep in mind that this implementation of CNN on spheres is relatively naive, and there are some other sophisticated models in the field of geometric deep learning. However, what I would like to show is a quick and dirty way allow astronomers to try CNN on spheres with their own hand and laptop. The other point is that the hierarchical pixelization scheme might be helpful for future CNN on spheres. HEALPix by its nature is not fully hierarchically arranged because of the 12 base pixels.
+This repository served as a PyTorch and a Keras version of HEALPix CNN. We should keep in mind that this implementation of CNN on spheres is relatively naive, and there are some other sophisticated models in the field of geometric deep learning. However, what I would like to show is a quick and dirty way to allow astronomers to try CNN on spheres with their own hands and laptops. The other point is that the hierarchical pixelization scheme might be helpful for future CNN on spheres. HEALPix by its nature is not fully hierarchically arranged because of the 12 base pixels.
 
 # HEALPix + Conv1D = convolution on Healpix spheres
 ![](images/MNIST-Task.png)
@@ -32,5 +32,5 @@ The generated spherical MNIST digits were not realistic comparing to the counter
 # Using the scipt
 We only have a `.py` written in PyTorch. The way to execute it is to run the following command in your terminal:
 ```bash
-python MNIST-HEALPix-Conv1D.py --use_gpu=False --epochs=10 --batch_size=32 
+python MNIST-HEALPix-Conv1D.py --use_gpu=False --epochs=100 --batch_size=32 
 ```
